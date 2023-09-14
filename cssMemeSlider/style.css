@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.slider {
+    margin: auto;
+    width: fit-content;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.slide {
+    width: 20rem;
+}
