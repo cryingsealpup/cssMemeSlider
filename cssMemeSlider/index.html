@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
 </head>
+
 <body>
     <div class="slider">
+        <input type="radio" name="slide" id="item-1" checked />
+        <input type="radio" name="slide" id="item-2" />
+        <input type="radio" name="slide" id="item-3" />
+        <input type="radio" name="slide" id="item-4" />
+        <input type="radio" name="slide" id="item-5" />
         <div class="slider-wrapper">
-            <input type="radio" name="slide" id="item-1" checked />
-            <input type="radio" name="slide" id="item-2" />
-            <input type="radio" name="slide" id="item-3" />
-            <input type="radio" name="slide" id="item-4" />
-            <input type="radio" name="slide" id="item-5" />
-            <div class="slide">
-                <img src="memes/1.jpg" alt="consequences" class="slide-img" id ='item-1'>
+
+            <div class="slide" id='slide-1'>
+                <img src="memes/1.jpg" alt="consequences" class="slide-img">
                 <div class="slide-desc">
                     <p> Be careful </p>
-                    <p> before watching beyond </p> 
+                    <p> before watching beyond </p>
                 </div>
             </div>
             <div class="slide">
                 <img src="memes/2.jpg" alt="twin peaks cursed" class="slide-img">
                 <div class="slide-desc">
                     <p> NORTH VILLAGE </p>
-                    <p> three  </p> 
+                    <p> three </p>
                 </div>
             </div>
             <div class="slide">
@@ -57,4 +60,5 @@
         </div>
     </div>
 </body>
+
 </html>

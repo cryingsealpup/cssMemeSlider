@@ -16,6 +16,7 @@ body {
     height: 100vh;
     gap: 1rem;
     width: fit-content;
+    width: -moz-fit-content;
     align-items: center;
 }
 
@@ -25,7 +26,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    transition: all 1s linear;
+    transition: all 0.3s linear;
 }
 
 .slide-img {
@@ -51,8 +52,77 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.pagination label {width: 1rem;height: 1rem;border-radius: 100%;background: white;display: block;}
+.pagination label {
+    width: 1rem;
+    height: 1rem;
+    background: white;
+    border: 0.2rem solid transparent;
+    display: block;
+    transition: all 0.3s linear;
+}
+
+.pagination label:hover {
+    background: black;
+    border: 0.2rem solid white;
+}
+
 
 input {
     display: none;
+    order: 2;
+}
+
+label {
+    order: 1;
+}
+
+
+#item-1:checked~.slider-wrapper #slide-1 {
+    margin-left: 0;
+}
+
+#item-1:checked~.pagination label:first-child{
+    background: black;
+    border: 0.2rem solid white;
+}
+
+#item-2:checked~.slider-wrapper #slide-1 {
+    margin-left: -22rem;
+}
+
+#item-2:checked~.pagination label:nth-child(2){
+    background: black;
+    border: 0.2rem solid white;
+}
+
+#item-3:checked~.slider-wrapper #slide-1 {
+    margin-left: -45rem;
+}
+
+#item-3:checked~.pagination label:nth-child(3){
+    background: black;
+    border: 0.2rem solid white;
+}
+
+#item-4:checked~.slider-wrapper #slide-1 {
+    margin-left: -46em;
+}
+
+#item-4:checked~.pagination label:nth-child(4){
+    background: black;
+    border: 0.2rem solid white;
+}
+
+#item-5:checked~.slider-wrapper #slide-1 {
+    margin-left: -92rem;
+}
+
+#item-5:checked~.pagination label:nth-child(5){
+    background: black;
+    border: 0.2rem solid white;
+}
+
+.pagination {
+    display: flex;
+    gap: 0.5rem;
 }
