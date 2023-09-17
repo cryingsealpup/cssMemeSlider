@@ -42,6 +42,7 @@ body {
 }
 
 .slide-img {
+    margin-top: 0.1rem;
     width: 21rem;
     height: 22rem;
     object-fit: cover;
@@ -65,21 +66,32 @@ p {
     font-size: 2rem;
 }
 
-
 .pagination label {
-    width: 0.5rem;
-    height: 0.5rem;
-    background: white;
-    border: 0.1rem solid transparent;
     display: block;
     transition: all 0.3s linear;
     cursor: pointer;
+    padding: 0.35rem;
     margin-top: -6.2rem;
+    background: black;
+}
+
+.pagination label span {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: white;
+    border: 0.1rem solid transparent;
 }
 
 
-.pagination label:hover {
+.pagination label:hover span {
     background: black;
+    border: 0.2rem solid white;
+}
+
+.pagination label:active span {
+    background: greenyellow;
+    transition: background 0.2s cubic-bezier(0.4, 0, 1, 1);
     border: 0.2rem solid white;
 }
 
@@ -93,7 +105,7 @@ input {
     margin-left: 0;
 }
 
-#item-1:checked~.pagination label:first-child {
+#item-1:checked~.pagination label:first-child span {
     background: black;
     border: 0.2rem solid white;
 }
@@ -102,7 +114,7 @@ input {
     margin-left: -22rem;
 }
 
-#item-2:checked~.pagination label:nth-child(2) {
+#item-2:checked~.pagination label:nth-child(2) span {
     background: black;
     border: 0.2rem solid white;
 }
@@ -111,7 +123,7 @@ input {
     margin-left: -45rem;
 }
 
-#item-3:checked~.pagination label:nth-child(3) {
+#item-3:checked~.pagination label:nth-child(3) span {
     background: black;
     border: 0.2rem solid white;
 }
@@ -120,7 +132,7 @@ input {
     margin-left: -68rem;
 }
 
-#item-4:checked~.pagination label:nth-child(4) {
+#item-4:checked~.pagination label:nth-child(4) span {
     background: black;
     border: 0.2rem solid white;
 }
@@ -129,18 +141,16 @@ input {
     margin-left: -92rem;
 }
 
-#item-5:checked~.pagination label:nth-child(5) {
+#item-5:checked~.pagination label:nth-child(5) span {
     background: black;
     border: 0.2rem solid white;
 }
 
 .pagination {
     display: flex;
-    gap: 0.5rem;
-    margin-right: 1rem;
     justify-content: flex-start;
     align-items: center;
-    background: transparent;
+    background: black;
     width: fit-content;
     margin-left: auto;
 }
@@ -173,10 +183,26 @@ input {
         height: 80rem;
     }
 
+    .pagination label span {
+        border: 0.3rem solid transparent;
+    }
+
     .pagination label {
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .pagination label span {
         width: 2rem;
         height: 2rem;
-        margin-top: 0;
+    }
+
+    .pagination label:hover span {
+        border: 0.3rem solid white;
+    }
+
+    #item-1:checked~.pagination label:first-child span {
+        border: 0.5rem solid white;
     }
 
 
@@ -184,34 +210,34 @@ input {
         margin-left: -95.6vw;
     }
 
-    #item-2:checked~.pagination label:nth-child(2) {
+    #item-2:checked~.pagination label:nth-child(2) span {
         background: black;
-        border: 0.2rem solid white;
+        border: 0.5rem solid white;
     }
 
     #item-3:checked~.slider-wrapper #slide-1 {
         margin-left: -191.12vw;
     }
 
-    #item-3:checked~.pagination label:nth-child(3) {
+    #item-3:checked~.pagination label:nth-child(3) span {
         background: black;
-        border: 0.2rem solid white;
+        border: 0.5rem solid white;
     }
 
     #item-4:checked~.slider-wrapper #slide-1 {
         margin-left: -288.24vw;
     }
 
-    #item-4:checked~.pagination label:nth-child(4) {
+    #item-4:checked~.pagination label:nth-child(4) span{
         background: black;
-        border: 0.2rem solid white;
+        border: 0.5rem solid white;
     }
 
     #item-5:checked~.slider-wrapper #slide-1 {
         margin-left: -385vw;
     }
 
-    #item-5:checked~.pagination label:nth-child(5) {
+    #item-5:checked~.pagination label:nth-child(5) span {
         background: black;
         border: 0.2rem solid white;
     }
