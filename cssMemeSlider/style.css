@@ -118,7 +118,7 @@ input {
 }
 
 #item-4:checked~.slider-wrapper #slide-1 {
-    margin-left: -46em;
+    margin-left: -68rem;
 }
 
 #item-4:checked~.pagination label:nth-child(4){
