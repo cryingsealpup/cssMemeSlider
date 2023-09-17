@@ -2,4 +2,4 @@
 RS School task repo
 
 Sources:
-https://auroratide.com/posts/styling-a-focused-input-label
+https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator

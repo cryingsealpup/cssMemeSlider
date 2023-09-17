@@ -1,7 +1,10 @@
+html {
+    font-size: 1.111vw;
+}
+
 body {
     margin: 0;
     background-color: black;
-    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -13,12 +16,13 @@ body {
     flex-direction: column;
     gap: 0;
     height: 100vh;
+    max-height: 120vh;
     justify-content: center;
 }
 
 .slider-wrapper {
     display: flex;
-    /* height: 100vh; */
+    height: fit-content;
     gap: 1rem;
     width: fit-content;
     width: -moz-fit-content;
@@ -32,6 +36,7 @@ body {
     gap: 1rem;
     transition: all 0.3s linear;
     align-items: center;
+    height: fit-content;
 }
 
 .slide-img {
@@ -40,13 +45,13 @@ body {
     object-fit: cover;
     border: 0.1rem black solid;
     outline: 0.1rem white solid;
-    /* padding-left: 0.1rem; */
 }
 
 .slide-desc {
     color: white;
     margin-right: 8rem;
-    height: 7.5rem;
+    height: 9.5rem;
+    font-size: 1.5rem;
 }
 
 p {
@@ -58,6 +63,7 @@ p {
 }
 
 .slide-desc p:last-child {
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -68,7 +74,10 @@ p {
     border: 0.1rem solid transparent;
     display: block;
     transition: all 0.3s linear;
+    cursor: pointer;
+    box-shadow: 1rem 1rem 1rem 1rem transparent;
 }
+
 
 .pagination label:hover {
     background: black;
@@ -78,11 +87,6 @@ p {
 
 input {
     display: none;
-    order: 2;
-}
-
-label {
-    order: 1;
 }
 
 
@@ -134,8 +138,27 @@ label {
 .pagination {
     display: flex;
     gap: 0.5rem;
-    margin: -6.5rem 1.5rem 1rem 0;
+    margin: -9.1rem 1.5rem 1rem 0;
     justify-content: flex-end;
     align-items: center;
     background: transparent;
+}
+
+@media (min-width: 90em) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 48em) {
+    .pagination {
+        margin: 2rem 0;
+        justify-content: center;
+    }
+
+    .slide-desc {
+        margin: 0;
+        height: fit-content;
+    }
 }
