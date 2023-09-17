@@ -87,6 +87,7 @@ p {
 .pagination label:hover span {
     background: black;
     border: 0.2rem solid white;
+    transition: all 0.5s ease-in-out;
 }
 
 .pagination label:active span {
@@ -171,16 +172,16 @@ input {
 
     .slide-desc {
         margin: 0;
-        font-size: 10rem;
+        font-size: 5.5rem;
         height: fit-content;
     }
 
     .slide, .slider, .slide-img {
-        width: 95vw;
+        width: 37rem;
     }
 
     .slide-img {
-        height: 80rem;
+        height: 33rem;
     }
 
     .pagination label span {
@@ -207,7 +208,7 @@ input {
 
 
     #item-2:checked~.slider-wrapper #slide-1 {
-        margin-left: -95.6vw;
+        margin-left: -37.9rem;
     }
 
     #item-2:checked~.pagination label:nth-child(2) span {
@@ -216,7 +217,7 @@ input {
     }
 
     #item-3:checked~.slider-wrapper #slide-1 {
-        margin-left: -191.12vw;
+        margin-left: -76rem;
     }
 
     #item-3:checked~.pagination label:nth-child(3) span {
@@ -225,7 +226,7 @@ input {
     }
 
     #item-4:checked~.slider-wrapper #slide-1 {
-        margin-left: -288.24vw;
+        margin-left: -114rem;
     }
 
     #item-4:checked~.pagination label:nth-child(4) span{
@@ -234,11 +235,11 @@ input {
     }
 
     #item-5:checked~.slider-wrapper #slide-1 {
-        margin-left: -385vw;
+        margin-left: -152rem;
     }
 
     #item-5:checked~.pagination label:nth-child(5) span {
         background: black;
-        border: 0.2rem solid white;
+        border: 0.5rem solid white;
     }
 }
