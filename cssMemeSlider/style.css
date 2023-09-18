@@ -165,14 +165,17 @@ input {
 
 
 @media (max-width: 48em) {
+    .slider {
+        height: 100%;
+    }
     .pagination {
-        margin: 2rem 0;
+        margin: -17rem 0 2rem;
         justify-content: center;
         width: 100%;
     }
 
     .slide-desc {
-        margin: 0;
+        margin: 6rem 0 0;
         font-size: 5.5rem;
         height: fit-content;
     }
@@ -182,7 +185,7 @@ input {
     }
 
     .slide-img {
-        height: 33rem;
+        height: 37rem;
     }
 
     .pagination label span {
