@@ -93,7 +93,7 @@ p {
 
 .pagination label:active span {
     background: greenyellow;
-    transition: background 0.2s linear;
+    transition: all 0.2s linear;
     border: 0.2rem solid white;
 }
 
@@ -104,7 +104,7 @@ input {
 
 
 #item-1:checked~.slider-wrapper #slide-1 {
-    margin-left: 0;
+    margin-left: 1rem;
 }
 
 #item-1:checked~.pagination label:first-child span {
@@ -140,7 +140,7 @@ input {
 }
 
 #item-5:checked~.slider-wrapper #slide-1 {
-    margin-left: -92rem;
+    margin-left: -91rem;
 }
 
 #item-5:checked~.pagination label:nth-child(5) span {
