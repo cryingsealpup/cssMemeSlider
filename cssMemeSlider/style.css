@@ -87,12 +87,12 @@ p {
 .pagination label:hover span {
     background: black;
     border: 0.2rem solid white;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s linear;
 }
 
 .pagination label:active span {
     background: greenyellow;
-    transition: background 0.2s cubic-bezier(0.4, 0, 1, 1);
+    transition: background 0.2s linear;
     border: 0.2rem solid white;
 }
 
