@@ -81,6 +81,7 @@ p {
     height: 0.6rem;
     background: white;
     border: 0.1rem solid transparent;
+    transition: all 0.2s linear;
 }
 
 
