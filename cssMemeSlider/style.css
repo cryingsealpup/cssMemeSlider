@@ -38,7 +38,6 @@ body {
     flex-direction: column;
     gap: 1rem;
     transition: all 0.3s linear;
-    align-items: center;
 }
 
 .slide-img {
@@ -64,6 +63,9 @@ p {
 
 .slide-desc {
     font-size: 2rem;
+    text-align: left;
+}
+
 }
 
 .pagination label {
@@ -104,7 +106,7 @@ input {
 
 
 #item-1:checked~.slider-wrapper #slide-1 {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 #item-1:checked~.pagination label:first-child span {
@@ -113,7 +115,7 @@ input {
 }
 
 #item-2:checked~.slider-wrapper #slide-1 {
-    margin-left: -22rem;
+    margin-left: -21.5rem;
 }
 
 #item-2:checked~.pagination label:nth-child(2) span {
@@ -122,7 +124,7 @@ input {
 }
 
 #item-3:checked~.slider-wrapper #slide-1 {
-    margin-left: -45rem;
+    margin-left: -44.5rem;
 }
 
 #item-3:checked~.pagination label:nth-child(3) span {
@@ -131,7 +133,7 @@ input {
 }
 
 #item-4:checked~.slider-wrapper #slide-1 {
-    margin-left: -68rem;
+    margin-left: -68.5rem;
 }
 
 #item-4:checked~.pagination label:nth-child(4) span {
@@ -140,7 +142,7 @@ input {
 }
 
 #item-5:checked~.slider-wrapper #slide-1 {
-    margin-left: -91rem;
+    margin-left: -91.5rem;
 }
 
 #item-5:checked~.pagination label:nth-child(5) span {
